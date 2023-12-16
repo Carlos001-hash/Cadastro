@@ -2,71 +2,85 @@
 
 * {
     margin: 0;
-    padding: 0;
+    padding: 0;35
 }
 
 body {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    color: rgb(255, 255, 255);
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    background-color: rgb(167 167 255);
+  width: 100%;
+  display: flex;
+  color: rgb(255, 255, 255);
+  justify-content: center;
+  align-items: center;
+  word-break: break-all;
+  box-sizing: border-box;
+  background-color: rgb(167 167 255);
 }
 
 .container {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    margin-top: 10px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  margin-top: 0px;
 }
 
 form {
-    width: 369px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0px;
-    background-color: rgb(25 24 48);
-    border-radius: 50px;
-    margin: 0;
-    transition: all .3s ease-out;
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px;
+  background-color: rgb(25 24 48);
+  border-radius: 0px;
+  margin: 0;
+  transition: all .3s ease-out;
+}
+
+.form {
+  width: 100%;
+  height: 100vh;
 }
 
 form h1 {
-    text-align: center;
-    font-family: 'Play', sans-serif;
-    font-size: 3rem;
-    margin-top: 40px;
-    color: #ffffff;
+  text-align: center;
+  font-family: 'Play', sans-serif;
+  font-size: 2.3rem;
+  margin-top: 35px;
+  color: #ffffff;
 }
 
 #ms-erro {
-    width: 100%;
-    height: 21px;
-    text-align: center;
-    margin: 14px;
+  width: 100%;
+  text-align: center;
+  margin: 14px;
 }
 
 .label-input-grup {
-    display: flex;
-    flex-direction: column;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .name-password {
-    display: flex;
-    flex-direction: column;
-    transition: all .3s ease-out;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: all .3s ease-out;
 }
 
 .label-input, .label-input-email,
  .label-input-senha {
-    display: flex;
-    position: relative;
-    padding: 13px;
-    margin-right: 0px;
+   display: flex;
+   position: relative;
+   margin: 9px 15px;
+}
+
+.label-input {
+  position: relative;
 }
 
 
@@ -76,57 +90,52 @@ form h1 {
     pointer-events: none;
     position: absolute;
     top: 0;
-    left: 23px;
+    left: 10px;
     color: #8f8f8f;
-    margin-top: 20px;
+    margin-top: 9px;
     transition: all .3s ease-out;
 }
 
 
 
 .label-input input {
-    width: 271px;
-    padding: 7px 7px;
-    display: inline-block;
-    outline: none;
-    padding-top: 13;
-    min-width: 180px;
-    color: #ffffff;
-    font-size: 14px;
-    transition: all .3s ease-out;
-    background-color: #262448;
-    border-radius: 4px;
-    border: 1.5px solid #262448;
+  width: 100%;
+  padding: 7px 7px;
+  position: relative;
+  outline: none;
+  padding-top: 13;
+  color: #ffffff;
+  font-size: 18px;
+  transition: all .3s ease-out;
+  background-color: #262448;
+  border-radius: 4px;
+  border: 1.5px solid #262448;
 }
 
 .label-input-senha input {
-    width: 205px;
-    padding: 7px 7px;
-    display: inline-block;
-    outline: none;
-    padding-top: 13;
-    min-width: 115px;
-    color: #ffffff;
-    font-size: 14px;
-    transition: all .3s ease-out;
-    background-color: #262448;
-    border-radius: 4px 0px 0px 4px;
-    border: 1.5px solid #262448;
+  max-width: 65%;
+  width: 100%;
+  padding: 7px 7px;
+  outline: none;
+  padding-top: 13;
+  color: #ffffff;
+  font-size: 14px;
+  transition: all .3s ease-out;
+  background-color: #262448;
+  border-radius: 4px 0px 0px 4px;
+  border: 1.5px solid #262448;
 }
 
 .label-input-email input {
-    width: 100%;
-    padding: 7px 7px;
-    display: inline-block;
-    outline: none;
-    padding-top: 13;
-    min-width: 180px;
-    color: #ffffff;
-    font-size: 14px;
-    transition: all .3s ease-out;
-    background-color: #262448;
-    border-radius: 4px;
-    border: 1.5px solid #262448;
+  width: 100%;
+  padding: 7px 7px;
+  outline: none;
+  color: #ffffff;
+  font-size: 14px;
+  transition: all .3s ease-out;
+  background-color: #262448;
+  border-radius: 4px;
+  border: 1.5px solid #262448;
 }
 
 .label-input input:focus,
@@ -135,71 +144,76 @@ form h1 {
     border: 1.5px solid #413d8a;
 }
 
-#stf, #fst {
-    width: 100%;
-}
+
 
 .input-gender {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
 }
 
 .gender {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 6px;
-    margin-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 5px;
 }
 
 .radio-gender {
-    height: 20px;
-    display: flex;
-    align-items: center;
-    gap: 2px;
-    color: #8f8f8f;
-    border-radius: 8px 4px 4px 8px;
-    padding: 2px;
-    font-size: 11px;
-    font-weight: 600;
-    background-color: #262448;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  color: #8f8f8f;
+  border-radius: 8px 4px 4px 8px;
+  padding: 2px;
+  font-size: 11px;
+  font-weight: 600;
+  background-color: #262448;
 }
 
 
 
 .ver-senha {
-    text-align: center;
-    cursor: pointer;
-    padding: 8px 10px 8px 10px;
-    top: 13px;
-    border-radius: 0px 4px 4px 0px;
-    right: 0;
-    display: block;
-    border: none;
-    background-color: #3636A1;
-    color: #ffffff;
+  max-width: 35%;
+  text-align: center;
+  cursor: pointer;
+  font-size: 9px;
+  flex: 1 0 auto;
+  border-radius: 0px 4px 4px 0px;
+  border: none;
+  background-color: #3636A1;
+  color: #ffffff;
 }
 
 .label-input input:valid + label,
 .label-input-senha input:valid + label,
 .label-input-email input:valid + label {
-    margin-top: -2px;
+    margin-top: -15px;
     font-size: 13px;
-    left: 15px;
+    left: 8px;
     padding-top: 0;
     font-weight: 600;
 }
 
+.btn-entrar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .btnCad {
-    width: 11em;
-    height: 5vh;
-    border: 0;
-    cursor: pointer;
-    background-color: #3636a1;
-    border-radius: 2px;
-    color: #fcfcff;
+  width: 100%;
+  height: 2.4rem;
+  margin: 10px 35px;
+  border: 0;
+  cursor: pointer;
+  background-color: #3636a1;
+  border-radius: 2px;
+  color: #fcfcff;
 }
 
 button:hover {
@@ -207,7 +221,7 @@ button:hover {
 }
 
 p {
-    margin: 20px;
+    margin: 11px;
 }
 
 p a {
@@ -221,35 +235,104 @@ p a:hover {
     transition: all .3s ease-out;
 }
 
-@media (min-width: 554px) {
-    form {
-        width: 468px;
-        transition: all .0s ease-out;
-    }
+@media (min-width: 480px) {
+  
+  .container {
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    margin-top: 0px;
+    transition: all .0s ease-out;
+}
+  
+  form {
+    border-radius: 50px;
+    box-shadow: 0px 0px 20px 3px #000000;
+    transition: all .0s ease-out;
+  }
+  
+  .form {
+    max-width: 23rem;
+    height: 31rem;
+    margin: 0px;
+}
+  
+  form h1 {
+  font-size: 2.3rem;
+}
+  #ms-erro {
+    margin: 11px 0px;
+  }
 
-    .label-input input {
-        width: 0;
-    }
+  .label-input input {}
 
-    .gender {
-        gap: 7px;
-        margin-bottom: 0px;
-    }
+  .gender {
+    gap: 7px;
+    margin-bottom: 0px;
+  }
 
-    .name-password {
-        display: flex;
-        flex-direction: row;
-        transition: all .3s ease-out;
-    }
+  .name-password {
+    display: flex;
+    flex-direction: column;
+    transition: all .3s ease-out;
+  }
 
-    .label-input-senha input {
-        width: 1px;
-    }
+  .label-input-senha input {}
 
-    .input-gender {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 13px;
-    }
+  .input-gender {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+}
+
+@media (min-width: 820px) {
+  
+  .container {
+    width: 100%;
+    transition: all .0s ease-out;
+}
+  
+  form {
+    height: 3px;
+    transition: all .0s ease-out;
+  }
+  
+  .form {
+    max-width: 468px;
+    height: 27rem;
+}
+  
+  form h1 {
+  font-size: 3rem;
+}
+
+  .gender {
+    gap: 7px;
+    margin-right: 25px;
+    flex-wrap: nowrap;
+  }
+  
+  .input-gender {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .name-password {
+    display: flex;
+    flex-direction: row;
+    transition: all .3s ease-out;
+  }
+
+  .label-input-senha input {}
+
+  .input-gender {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 13px;
+  }
 }
