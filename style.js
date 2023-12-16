@@ -105,7 +105,7 @@ numero.addEventListener("keyup", () => {
     validNumero = false
   }else {
     labelNumero.style = "color: #ffffff;"
-    labelNumero.innerHTML = "Nome"
+    labelNumero.innerHTML = "Numero"
     numero.style = "border: 1.5px solid #ddddd;"
     validNumero = true
   }
